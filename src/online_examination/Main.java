@@ -16,7 +16,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
 
         while (true) {
-            System.out.println("1. Register\n2. Login\n3. Exit");
+            System.out.println("<<< 1.Register >>>\n <<< 2. Login >>>\n<<< 3. Exit >>>");
             int choice = scanner.nextInt();
             switch (choice) {
                 case 1:
@@ -35,8 +35,8 @@ public class Main {
     }
 
     private static void loadQuestions() {
-        questions.add(new Question("What is 2 + 2?", new String[]{"1", "2", "3", "4"}, 3));
-        questions.add(new Question("What is the capital of France?", new String[]{"Berlin", "Madrid", "Paris", "London"}, 2));
+        questions.add(new Question("the Harry Potter series is written by ?", new String[]{"K K Rowling", "K J Rowling", "J K Rowling", "A K Rowling"}, 2));
+        questions.add(new Question("What is the capital of india?", new String[]{"Berlin", "New Delhi", "Paris", "London"}, 1));
     }
 
     private static void register(Scanner scanner) {
